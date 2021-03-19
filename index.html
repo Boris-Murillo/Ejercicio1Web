@@ -4,83 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
     <title>Hoja de vida</title>
 </head>
 <body>
-    <main>
-        <figure>
-            <img src="img/foto2.jpg" alt="foto de Boris" height="200px" width="1000px">
+    <main class="container">
+        <figure class="img">
+            <img src="img/foto1.jpg" alt="foto de Boris" >
         </figure>
-        <hr>
-        <h1 style="color: red;">BORIS MAURICIO MURILLO MEJIA </h1>
-        <h2>12/02/1999</h2>
-        <hr>
-        <p>
-            Mi nombre es Boris Mauricio Murillo Mejia tengo 22 años, nací en la ciudad de Cúcuta, 
-            empecé mis estudios en la cuidad de cali,continué en popayan y finalmente regresé a Cúcuta a finalizar con ellos; 
-            cuando estaba niño me gustaba mucho jugar en la calle a la pelota; me gustaba ir a entrenar futbol, jugar a lo que un tipico niño juega o jugaba
-            (metras, trompo, escondidas, la lleva).
-        </p>
-        <p>
-            La carrera de ingenieria de sistemas me ha parecido estupenda, en ella he aprendido un poco cómo es que funciona el mundo, como 
-            todo esto se asemeja a un sistema, como todo se conecta entre si y tiene un orden lógico. <br>
-            Lo mas dificil de la carrera hasta el momento ha sido las materias que tienen que ver con investigación o documentación ya que no son muy de mi agrado;
-            Recuerdo que la primera barrera que se me presentó en la ingenieria fue la programación ya que era un total paradigma,
-            era una nueva forma de pensar; pero con mucha práctica he sacado adelante la programción y he sabido tomarle cariño.    
-        </p>
-        <hr>
-        <h3>Mis hobbies:</h3>
-        <ul>
-            <li>Andar en bicicleta</li>
-            <li>Hacer ejercicio</li>
-            <li>Programar</li>
-        </ul>
-        <hr>
-        <h3>Peliculas y series favoritas</h3>
-        <ol>
-            <li>Vikings</li>
-            <li>The Mandalorian</li>
-            <li>Your name</li>
-        </ol>
-        <hr>
-        <h3>Canción Favorita</h3>
-        <audio controls autoplay>
-            <source src="audio/Imagine Dragons - Its Time.mp3">
-        </audio>
-        <hr>
-        <h3>Materias favoritas</h3>
-        <table style="width:100%">
-            <tr>
-              <th style="text-align: left">Materia</th>
-              <th style="text-align: left">Nota</th>
-              <th  style="text-align: left">Por qué</th>
-            </tr>
-            <tr>
-              <td>POO</td>
-              <td>4.0</td>
-              <td>Empecé a practicar más la programación y a entenderla</td>
-            </tr>
-            <tr>
-             <td>Arquitectura</td>
-             <td>3.1</td>
-             <td>Conocí ensamblador, un lenguaje un tanto temido; pero que me gustó</td>
-            </tr>
-            <tr>
-                <td>Estructuras</td>
-                <td>3.8</td>
-                <td>Entendí que no todo lo que venia haciendo estaba bien</td>
-            </tr>
-            <tr>
-                <td>Calculo Vectorial</td>
-                <td>4.1</td>
-                <td>Conocí a una buena persona además del profesor que es un gran maestro</td>
-            </tr>
-            <tr>
-                <td>Ecuaciones</td>
-                <td>4.3</td>
-                <td>Viví experiencias nuevas ese semestre y esa materia me trae esos recuerdos</td>
-            </tr>
-          </table>
+       
+        <div class="info"> 
+            <h1> BORIS MAURICIO MURILLO MEJIA </h1>
+            <h2>12/02/1999</h2>
+        </div>
+
+        <article>
+            <p>
+                Mi nombre es Boris Mauricio Murillo Mejia tengo 22 años, nací en la ciudad de Cúcuta, 
+                empecé mis estudios en la cuidad de cali,continué en popayan y finalmente regresé a Cúcuta a finalizar con ellos; 
+                cuando estaba niño me gustaba mucho jugar en la calle a la pelota; me gustaba ir a entrenar futbol, jugar a lo que un tipico niño juega o jugaba
+                (metras, trompo, escondidas, la lleva).
+            </p>
+            <p>
+                La carrera de ingenieria de sistemas me ha parecido estupenda, en ella he aprendido un poco cómo es que funciona el mundo, como 
+                todo esto se asemeja a un sistema, como todo se conecta entre si y tiene un orden lógico. <br>
+                Lo mas dificil de la carrera hasta el momento ha sido las materias que tienen que ver con investigación o documentación ya que no son muy de mi agrado;
+                Recuerdo que la primera barrera que se me presentó en la ingenieria fue la programación ya que era un total paradigma,
+                era una nueva forma de pensar; pero con mucha práctica he sacado adelante la programción y he sabido tomarle cariño.    
+            </p>
+        </article>
+      
+        <div class="hobbies">
+            <h3>Mis hobbies:</h3>
+            <ul>
+                <li>Andar en bicicleta</li>
+                <li>Hacer ejercicio</li>
+                <li>Programar</li>
+            </ul>
+        </div>
+      
+        <div class="peli">
+            <h3>Peliculas y series favoritas</h3>
+            <ol>
+                <li>Vikings</li>
+                <li>The Mandalorian</li>
+                <li>Your name</li>
+            </ol>
+        </div>
+        
+    
+        <div class="cancion">
+            <h3>Canción Favorita</h3>
+            <audio controls autoplay>
+                <source src="audio/Imagine Dragons - Its Time.mp3">
+            </audio>
+        </div>
+        
+       
+        <div class="materias">
+            <h3>Materias favoritas</h3>
+            <table style="width:100%">
+                <tr>
+                  <th style="text-align: left">Materia</th>
+                  <th style="text-align: left">Nota</th>
+                  <th  style="text-align: left">Por qué</th>
+                </tr>
+                <tr>
+                  <td>POO</td>
+                  <td>4.0</td>
+                  <td>Empecé a practicar más la programación y a entenderla</td>
+                </tr>
+                <tr>
+                 <td>Arquitectura</td>
+                 <td>3.1</td>
+                 <td>Conocí ensamblador, un lenguaje un tanto temido; pero que me gustó</td>
+                </tr>
+                <tr>
+                    <td>Estructuras</td>
+                    <td>3.8</td>
+                    <td>Entendí que no todo lo que venia haciendo estaba bien</td>
+                </tr>
+                <tr>
+                    <td>Calculo Vectorial</td>
+                    <td>4.1</td>
+                    <td>Conocí a una buena persona además del profesor que es un gran maestro</td>
+                </tr>
+                <tr>
+                    <td>Ecuaciones</td>
+                    <td>4.3</td>
+                    <td>Viví experiencias nuevas ese semestre y esa materia me trae esos recuerdos</td>
+                </tr>
+              </table>
+        </div>
     </main>
 </body>
 </html>
