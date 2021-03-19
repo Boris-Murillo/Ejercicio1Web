@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+  
+.container{
+    
+    background-color: rgb(129, 175, 125);
+    display: grid;
+    height: 100%;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 1fr 1.5fr 0.7fr 0.5fr 1fr ;
+    grid-template-areas: 
+        "foto nombre"
+        "biografia biografia "
+        "hobbies pelicula"
+        "cancion cancion "
+        "materia materia";
+    grid-gap: 0.2rem; 
+    font-size: 2rem;
+}
+
+h3{
+    margin: 1rem;
+}
+
+.img{
+    grid-area: foto;
+}
+
+.info{
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    grid-area: nombre;
+}
+
+article{
+    margin: 3rem;
+    grid-area: biografia;
+}
+
+.hobbies{
+    grid-area: hobbies;
+}
+
+.peli{
+    grid-area: pelicula;
+}
+
+.cancion{
+    grid-area: cancion;
+}
+
+.materias{
+    margin-top: 3rem;
+    grid-area: materia ;
+}
