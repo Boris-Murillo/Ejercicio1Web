@@ -15,6 +15,26 @@
     font-size: 2rem;
 }
 
+
+
+header{
+    position: fixed;
+    top: 0;
+    height: 5rem; 
+    width: 100%;
+    background-color: #ED4A70;
+    text-align: right; 
+}
+
+
+header li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-size: 2rem;
+}
+
 .img{
     grid-area: foto;
 }
