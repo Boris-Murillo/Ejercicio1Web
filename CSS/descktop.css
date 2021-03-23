@@ -1,6 +1,6 @@
-
 .container{
-    background-color: rgb(129, 175, 125);
+    background-color: #77BD81;
+    margin-top: 5rem; 
     display: grid;
     height: 100%;
     grid-template-columns: 4fr 4fr;
@@ -13,5 +13,41 @@
         "materia materia";
     grid-gap: 0.2rem; 
     font-size: 2rem;
+}
+
+.img{
+    grid-area: foto;
+}
+
+.info{
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    grid-area: nombre;
+}
+
+article{
+    margin: 3rem;
+    grid-area: biografia;
+}
+
+.hobbies{
+    grid-area: hobbies;
+    padding-left: 9rem;
+}
+
+.peli{
+    grid-area: pelicula;
+}
+
+.cancion{
+    grid-area: cancion;
+    padding-left: 29rem;
+}
+
+.materias{
+    margin-top: 3rem;
+    grid-area: materia ;
+    padding-left: 3rem;
 }
 

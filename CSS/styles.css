@@ -11,8 +11,44 @@ html{
 img{
     display: block;
     margin-left: auto;
-    margin-top: 2rem;
+    margin-top: 1.6rem;
     margin-right: auto;  
+}
+
+header li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+header li a{
+    text-decoration: none;
+}
+
+
+h3{
+    margin: 1rem;
+}
+
+.container{
+    background-color: #77BD81;
+    margin-top: 5rem; 
+    display: grid;
+    height: 100%;
+    grid-template-columns: 4fr;
+    grid-template-rows: 0.3fr 0.8fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr 2fr;
+    grid-template-areas: 
+        "cab"
+        "foto"
+        "info"
+        "biografia"
+        "hobbies"
+        "pelicula"
+        "cancion"
+        "materia";
+    /* grid-gap: 0.2rem;  */
+    font-size: 2rem;
 }
 
 header{
@@ -23,39 +59,7 @@ header{
     background-color: #ED4A70;
     align-items: flex-end;
     text-align: right; 
-}
-
-header li{
-    display: inline-block;
-    margin-right: 2rem;
-    padding-top: 1rem;
-    font-size: 2rem;
-    
-}
-
-header li a{
-    text-decoration: none;
-}
-
-.container{
-    background-color: #77BD81;
-    margin-top: 5rem; 
-    display: grid;
-    height: 100%;
-    grid-template-columns: 4fr 4fr;
-    grid-template-rows: 1fr 1.5fr 0.7sfr 0.5fr 1fr ;
-    grid-template-areas: 
-        "foto nombre"
-        "biografia biografia "
-        "hobbies pelicula"
-        "cancion cancion "
-        "materia materia";
-    grid-gap: 0.2rem; 
-    font-size: 2rem;
-}
-
-h3{
-    margin: 1rem;
+    grid-area: cab;
 }
 
 .img{
@@ -64,9 +68,9 @@ h3{
 
 .info{
     display: block;
-    padding-top: 3rem;
     padding-bottom: 3rem;
-    grid-area: nombre;
+    padding-left: 2rem;
+    grid-area: info;
 }
 
 article{
@@ -76,20 +80,21 @@ article{
 
 .hobbies{
     grid-area: hobbies;
-    padding-left: 9rem;
+    padding-left: 3rem;
 }
 
 .peli{
     grid-area: pelicula;
+    padding-left: 3rem;
 }
 
 .cancion{
     grid-area: cancion;
-    padding-left: 29rem;
+    padding-left: 4rem;
 }
 
 .materias{
     margin-top: 3rem;
     grid-area: materia ;
-    padding-left: 3rem;
+    padding-left: 1rem;
 }
