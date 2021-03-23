@@ -11,16 +11,39 @@ html{
 img{
     display: block;
     margin-left: auto;
+    margin-top: 2rem;
     margin-right: auto;  
 }
-  
-.container{
+
+header{
+    position: fixed;
+    top: 0;
+    height: 5rem; 
+    width: 100%;
+    background-color: #ED4A70;
+    align-items: flex-end;
+    text-align: right; 
+}
+
+header li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding-top: 1rem;
+    font-size: 2rem;
     
-    background-color: rgb(129, 175, 125);
+}
+
+header li a{
+    text-decoration: none;
+}
+
+.container{
+    background-color: #77BD81;
+    margin-top: 5rem; 
     display: grid;
     height: 100%;
     grid-template-columns: 4fr 4fr;
-    grid-template-rows: 1fr 1.5fr 0.7fr 0.5fr 1fr ;
+    grid-template-rows: 1fr 1.5fr 0.7sfr 0.5fr 1fr ;
     grid-template-areas: 
         "foto nombre"
         "biografia biografia "
@@ -53,6 +76,7 @@ article{
 
 .hobbies{
     grid-area: hobbies;
+    padding-left: 9rem;
 }
 
 .peli{
@@ -61,9 +85,11 @@ article{
 
 .cancion{
     grid-area: cancion;
+    padding-left: 29rem;
 }
 
 .materias{
     margin-top: 3rem;
     grid-area: materia ;
+    padding-left: 3rem;
 }
